@@ -1,16 +1,17 @@
 <!DOCTYPE html>
 <html lang="zh-Hant">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-  <meta name="description" content="透過家族旅行的互動情境測驗，探索你是哪位動漫爸爸代表的人格類型！">
-  <title>家族旅行 MBTI 心理測驗</title>
-  <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+  <meta name="description" content="透過家族旅行的互動情境測驗，探索你是哪位動漫爸爸代表的人格類型！" />
+  <title>👨‍👧‍👦父親節來臨！菲比英文陪你測出爸氣人格 MBTI 心理測驗🫶</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
 </head>
 <body>
   <div class="container">
     <div id="intro" class="intro">
-      <h2>即將帶家人們來一趟旅行</h2>
+      <h2>🚗💨一場家族旅行即將展開✨🧳</h2>
       <button id="startButton">開始旅行</button>
     </div>
 
@@ -28,6 +29,24 @@
       <img id="characterImage" src="" alt="角色圖片" />
       <p id="resultDescription"></p>
       <button id="restartButton">重新測驗</button>
+      <div style="margin-top: 16px;">
+        <a id="lineShareButton" target="_blank"
+           style="display: inline-block; background-color: #00c300; color: white; padding: 10px 20px; border-radius: 8px; text-decoration: none; font-weight: bold; margin-left: 8px;">
+           分享到 Line
+        </a>
+      </div>
+
+      <!-- IG 分享卡片區塊開始 -->
+      <div id="shareCard" style="display: none; background: #fff; padding: 20px; border-radius: 16px; text-align: center; margin-top: 24px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
+        <img id="shareCharacterImage" src="" alt="角色圖片" style="width: 200px; border-radius: 12px;" />
+        <h3 id="shareTitle" style="margin-top: 12px;">你是哪位爸爸？</h3>
+        <p id="shareTraits" style="font-size: 1.1rem; font-weight: bold;">Reliable · Caring</p>
+        <p style="color: #888;">📍 chin3345678.github.io/2</p>
+      </div>
+      <button id="saveButton" style="display: none; margin-top: 16px; background-color: #f06292; color: white; padding: 10px 20px; border-radius: 8px; border: none; cursor: pointer;">
+        📷 儲存圖片分享 IG 限時
+      </button>
+      <!-- IG 分享卡片區塊結束 -->
     </div>
   </div>
 
