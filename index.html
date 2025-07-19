@@ -20,19 +20,17 @@
       <p id="resultDescription"></p>
       <button id="restartButton">重新測驗</button>
 
-      <!-- ✅ 分享卡片（會被轉成圖片） -->
-      <div id="shareCard" style="margin-top: 20px; background-color: white; padding: 16px; border-radius: 12px; max-width: 320px; text-align: center;">
+        <div id="shareCard" style="margin-top: 20px; background-color: white; padding: 16px; border-radius: 12px; max-width: 320px; text-align: center;">
         <img id="shareImage" src="" style="width: 100%; border-radius: 8px;" />
         <p id="shareText" style="font-size: 16px; font-weight: bold; margin-top: 8px;"></p>
         <p style="font-size: 14px; color: gray;">🔗 https://chin3345678.github.io/2/</p>
       </div>
 
-      <!-- ✅ 下載按鈕 -->
       <button id="saveButton" style="margin-top: 16px; background-color: #E1306C; color: white; padding: 10px 20px; border: none; border-radius: 8px;">
         📥 下載圖片分享到 IG 限時
       </button>
 
-      <!-- Line 分享 -->
+     
       <div style="margin-top: 16px;">
         <a id="lineShareButton" target="_blank"
            style="display: inline-block; background-color: #00c300; color: white; padding: 10px 20px; border-radius: 8px; text-decoration: none; font-weight: bold; margin-left: 8px;">
@@ -42,13 +40,13 @@
     </div>
   </div>
 
-  <!-- ✅ 需要 html2canvas 套件支援下載圖片 -->
+  
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/html2canvas@1.4.1/dist/html2canvas.min.js"></script>
 
   <script src="script.js"></script>
 
-  <!-- ✅ 加入下載功能 -->
+
   <script>
     document.getElementById("saveButton").addEventListener("click", function () {
       html2canvas(document.getElementById("shareCard")).then(function (canvas) {
